@@ -102,8 +102,10 @@ F3Net/
 facetorch-deepfake-efficientnet-b7/
 Pytorch_Retinaface/
 Deepfake-audio-detection-V2/
+AI-Website/
+Test-Video/
+Weights/
 modal_services/weights/
-AI-Website/TEMP_FOLDER/
 
 # Project-specific build / runtime
 .venv/
@@ -121,3 +123,6 @@ __pycache__/
 *.iml
 
 # End of .gitignore
+
+# Nested git repositories
+AI-Website/
