@@ -1,0 +1,123 @@
+# General
+# See https://git-scm.com/docs/gitignore for details
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+/.venv
+
+# Distribution / build
+build/
+dist/
+*.egg-info/
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+
+# Pytest
+.pytest_cache/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swo
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# OS generated files
+ehthumbs.db
+Icon?
+
+# Secrets & environment
+.env
+.env.*
+*.pem
+*.key
+
+# Cache
+.cache/
+__MACOSX/
+
+# Model weights, checkpoints and large binaries
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+*.bin
+*.onnx
+*.tflite
+*.h5
+*.model
+
+# Generic model / weights folders and patterns
+weights/
+Weights/
+pretrained*/
+pretrained models/
+models/
+**/models/
+**/model*
+
+# Large datasets / outputs / temp
+data/
+datasets/
+dataset/
+outputs/
+output/
+temp/
+tmp/
+cache/
+results/
+test_output.txt
+test_results.json
+test_results_comprehensive.json
+
+# Logs and debug output
+logs/
+*.log
+
+# Specific cloned or large project directories (ignore entire clones)
+DeepfakeBench/
+DeepFakesON-Phys/
+F3Net/
+facetorch-deepfake-efficientnet-b7/
+Pytorch_Retinaface/
+Deepfake-audio-detection-V2/
+modal_services/weights/
+AI-Website/TEMP_FOLDER/
+
+# Project-specific build / runtime
+.venv/
+venv/
+env/
+__pycache__/
+
+# Ignore generated artifacts from packaging/deployment
+.parcel-cache/
+.next/
+.vercel/
+
+# Ignore user-specific and IDE files
+.idea/
+*.iml
+
+# End of .gitignore
