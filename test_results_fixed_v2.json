@@ -1,0 +1,1344 @@
+{
+  "test_date": "2025-12-16T06:22:00.016760",
+  "videos_tested": 20,
+  "real_videos": {
+    "correct": 6,
+    "incorrect": 6,
+    "errors": 0,
+    "details": [
+      {
+        "video": "Test-Video/Real/00003.mp4",
+        "ground_truth": "REAL",
+        "prediction": "REAL",
+        "correct": true,
+        "confidence": 0.504034698009491,
+        "total_time": 2.363182544708252,
+        "stopped_at": "Layer 4: Semantic Analysis",
+        "layers": [
+          {
+            "name": "Layer 1: Audio Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 2: Visual Artifacts",
+            "prediction": "FAKE",
+            "confidence": 0.6576450742781162,
+            "time": 2.1273436546325684,
+            "details": {
+              "avg_fake_probability": 0.6576450742781162,
+              "max_fake_probability": 0.9933392405509949,
+              "num_faces_analyzed": 10,
+              "threshold": 0.5
+            }
+          },
+          {
+            "name": "Layer 3: Lip-Sync Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 4: Semantic Analysis",
+            "prediction": "REAL",
+            "confidence": 0.504034698009491,
+            "time": 0.20302581787109375,
+            "details": {
+              "avg_fake_probability": 0.49596530199050903,
+              "max_fake_probability": 0.5213181376457214,
+              "num_frames_analyzed": 10,
+              "threshold": 0.5,
+              "per_frame_probs": [
+                0.5058508515357971,
+                0.5007343292236328,
+                0.5117947459220886,
+                0.507715106010437,
+                0.45465341210365295,
+                0.4820173680782318,
+                0.49039730429649353,
+                0.4934364855289459,
+                0.5213181376457214,
+                0.4917352497577667
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "video": "Test-Video/Real/00009.mp4",
+        "ground_truth": "REAL",
+        "prediction": "REAL",
+        "correct": true,
+        "confidence": 0.5069406628608704,
+        "total_time": 2.0638179779052734,
+        "stopped_at": "Layer 4: Semantic Analysis",
+        "layers": [
+          {
+            "name": "Layer 1: Audio Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 2: Visual Artifacts",
+            "prediction": "FAKE",
+            "confidence": 0.6767078250646591,
+            "time": 1.8397283554077148,
+            "details": {
+              "avg_fake_probability": 0.6767078250646591,
+              "max_fake_probability": 0.9972057938575745,
+              "num_faces_analyzed": 10,
+              "threshold": 0.5
+            }
+          },
+          {
+            "name": "Layer 3: Lip-Sync Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 4: Semantic Analysis",
+            "prediction": "REAL",
+            "confidence": 0.5069406628608704,
+            "time": 0.18975424766540527,
+            "details": {
+              "avg_fake_probability": 0.49305933713912964,
+              "max_fake_probability": 0.5742802619934082,
+              "num_frames_analyzed": 10,
+              "threshold": 0.5,
+              "per_frame_probs": [
+                0.5742802619934082,
+                0.506593644618988,
+                0.4911379814147949,
+                0.5005213022232056,
+                0.45981815457344055,
+                0.5019062757492065,
+                0.47995954751968384,
+                0.4969470798969269,
+                0.4664214253425598,
+                0.4530074894428253
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "video": "Test-Video/YouTube-real/00276.mp4",
+        "ground_truth": "REAL",
+        "prediction": "FAKE",
+        "correct": false,
+        "confidence": 0.6321319341659546,
+        "total_time": 2.036879062652588,
+        "stopped_at": "Layer 4: Semantic Analysis",
+        "layers": [
+          {
+            "name": "Layer 1: Audio Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 2: Visual Artifacts",
+            "prediction": "REAL",
+            "confidence": 0.8698673086240888,
+            "time": 1.8237671852111816,
+            "details": {
+              "avg_fake_probability": 0.13013269137591124,
+              "max_fake_probability": 0.49840667843818665,
+              "num_faces_analyzed": 10,
+              "threshold": 0.5
+            }
+          },
+          {
+            "name": "Layer 3: Lip-Sync Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 4: Semantic Analysis",
+            "prediction": "FAKE",
+            "confidence": 0.6321319341659546,
+            "time": 0.17887234687805176,
+            "details": {
+              "avg_fake_probability": 0.6321319341659546,
+              "max_fake_probability": 0.6919786334037781,
+              "num_frames_analyzed": 10,
+              "threshold": 0.5,
+              "per_frame_probs": [
+                0.6031461954116821,
+                0.6137349605560303,
+                0.5954040288925171,
+                0.6301721334457397,
+                0.6458535194396973,
+                0.6329346299171448,
+                0.6438772082328796,
+                0.6344696879386902,
+                0.6919786334037781,
+                0.6297484636306763
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "video": "Test-Video/YouTube-real/00030.mp4",
+        "ground_truth": "REAL",
+        "prediction": "REAL",
+        "correct": true,
+        "confidence": 0.5077633261680603,
+        "total_time": 2.039722204208374,
+        "stopped_at": "Layer 4: Semantic Analysis",
+        "layers": [
+          {
+            "name": "Layer 1: Audio Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 2: Visual Artifacts",
+            "prediction": "REAL",
+            "confidence": 0.5041017010807991,
+            "time": 1.8224279880523682,
+            "details": {
+              "avg_fake_probability": 0.4958982989192009,
+              "max_fake_probability": 0.7692587971687317,
+              "num_faces_analyzed": 10,
+              "threshold": 0.5
+            }
+          },
+          {
+            "name": "Layer 3: Lip-Sync Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 4: Semantic Analysis",
+            "prediction": "REAL",
+            "confidence": 0.5077633261680603,
+            "time": 0.18349552154541016,
+            "details": {
+              "avg_fake_probability": 0.4922366738319397,
+              "max_fake_probability": 0.5646156072616577,
+              "num_frames_analyzed": 10,
+              "threshold": 0.5,
+              "per_frame_probs": [
+                0.5646156072616577,
+                0.4469592571258545,
+                0.4604162275791168,
+                0.5081793665885925,
+                0.49358823895454407,
+                0.4873318076133728,
+                0.4823501706123352,
+                0.5061566829681396,
+                0.48989754915237427,
+                0.4828714430332184
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "video": "Test-Video/YouTube-real/00204.mp4",
+        "ground_truth": "REAL",
+        "prediction": "FAKE",
+        "correct": false,
+        "confidence": 0.5453890562057495,
+        "total_time": 1.9954462051391602,
+        "stopped_at": "Layer 4: Semantic Analysis",
+        "layers": [
+          {
+            "name": "Layer 1: Audio Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 2: Visual Artifacts",
+            "prediction": "REAL",
+            "confidence": 0.7135448567569256,
+            "time": 1.7755405902862549,
+            "details": {
+              "avg_fake_probability": 0.2864551432430744,
+              "max_fake_probability": 0.8849380016326904,
+              "num_faces_analyzed": 10,
+              "threshold": 0.5
+            }
+          },
+          {
+            "name": "Layer 3: Lip-Sync Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 4: Semantic Analysis",
+            "prediction": "FAKE",
+            "confidence": 0.5453890562057495,
+            "time": 0.18799281120300293,
+            "details": {
+              "avg_fake_probability": 0.5453890562057495,
+              "max_fake_probability": 0.5657928586006165,
+              "num_frames_analyzed": 10,
+              "threshold": 0.5,
+              "per_frame_probs": [
+                0.5657928586006165,
+                0.5654529929161072,
+                0.5555949211120605,
+                0.5368137359619141,
+                0.53737872838974,
+                0.5419762134552002,
+                0.5285670757293701,
+                0.5418388247489929,
+                0.5496056079864502,
+                0.5308688282966614
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "video": "Test-Video/YouTube-real/00189.mp4",
+        "ground_truth": "REAL",
+        "prediction": "REAL",
+        "correct": true,
+        "confidence": 0.6768056847155094,
+        "total_time": 2.0006344318389893,
+        "stopped_at": "Layer 4: Semantic Analysis",
+        "layers": [
+          {
+            "name": "Layer 1: Audio Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 2: Visual Artifacts",
+            "prediction": "REAL",
+            "confidence": 0.6768056847155094,
+            "time": 1.7823169231414795,
+            "details": {
+              "avg_fake_probability": 0.3231943152844906,
+              "max_fake_probability": 0.6693835258483887,
+              "num_faces_analyzed": 10,
+              "threshold": 0.5
+            }
+          },
+          {
+            "name": "Layer 3: Lip-Sync Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 4: Semantic Analysis",
+            "prediction": "REAL",
+            "confidence": 0.5218495726585388,
+            "time": 0.18644213676452637,
+            "details": {
+              "avg_fake_probability": 0.4781504273414612,
+              "max_fake_probability": 0.5052915215492249,
+              "num_frames_analyzed": 10,
+              "threshold": 0.5,
+              "per_frame_probs": [
+                0.5052915215492249,
+                0.48565298318862915,
+                0.501835823059082,
+                0.4873080253601074,
+                0.47889551520347595,
+                0.4516623318195343,
+                0.45933523774147034,
+                0.45263946056365967,
+                0.4914715886116028,
+                0.4674113988876343
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "video": "Test-Video/YouTube-real/00211.mp4",
+        "ground_truth": "REAL",
+        "prediction": "FAKE",
+        "correct": false,
+        "confidence": 0.6384859085083008,
+        "total_time": 2.0587496757507324,
+        "stopped_at": "Layer 4: Semantic Analysis",
+        "layers": [
+          {
+            "name": "Layer 1: Audio Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 2: Visual Artifacts",
+            "prediction": "REAL",
+            "confidence": 0.858427461516112,
+            "time": 1.8394575119018555,
+            "details": {
+              "avg_fake_probability": 0.1415725384838879,
+              "max_fake_probability": 0.5624529123306274,
+              "num_faces_analyzed": 10,
+              "threshold": 0.5
+            }
+          },
+          {
+            "name": "Layer 3: Lip-Sync Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 4: Semantic Analysis",
+            "prediction": "FAKE",
+            "confidence": 0.6384859085083008,
+            "time": 0.18714094161987305,
+            "details": {
+              "avg_fake_probability": 0.6384859085083008,
+              "max_fake_probability": 0.6865400671958923,
+              "num_frames_analyzed": 10,
+              "threshold": 0.5,
+              "per_frame_probs": [
+                0.643497109413147,
+                0.6134429574012756,
+                0.6464428305625916,
+                0.6149799823760986,
+                0.6249017119407654,
+                0.628565788269043,
+                0.6865400671958923,
+                0.6810724139213562,
+                0.5995219945907593,
+                0.6458939909934998
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "video": "Test-Video/Celeb-real/id8_0006.mp4",
+        "ground_truth": "REAL",
+        "prediction": "REAL",
+        "correct": true,
+        "confidence": 0.7270767826586961,
+        "total_time": 2.0965216159820557,
+        "stopped_at": "Layer 4: Semantic Analysis",
+        "layers": [
+          {
+            "name": "Layer 1: Audio Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 2: Visual Artifacts",
+            "prediction": "REAL",
+            "confidence": 0.7270767826586961,
+            "time": 1.8559269905090332,
+            "details": {
+              "avg_fake_probability": 0.2729232173413038,
+              "max_fake_probability": 0.9201303720474243,
+              "num_faces_analyzed": 10,
+              "threshold": 0.5
+            }
+          },
+          {
+            "name": "Layer 3: Lip-Sync Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 4: Semantic Analysis",
+            "prediction": "REAL",
+            "confidence": 0.5035359263420105,
+            "time": 0.2069075107574463,
+            "details": {
+              "avg_fake_probability": 0.4964640736579895,
+              "max_fake_probability": 0.5219184160232544,
+              "num_frames_analyzed": 10,
+              "threshold": 0.5,
+              "per_frame_probs": [
+                0.5036199688911438,
+                0.4943464696407318,
+                0.46975380182266235,
+                0.4880886673927307,
+                0.48691079020500183,
+                0.5219184160232544,
+                0.47715044021606445,
+                0.4917904734611511,
+                0.5194550156593323,
+                0.5116066932678223
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "video": "Test-Video/Celeb-real/id33_0001.mp4",
+        "ground_truth": "REAL",
+        "prediction": "FAKE",
+        "correct": false,
+        "confidence": 0.5043820142745972,
+        "total_time": 2.1483042240142822,
+        "stopped_at": "Layer 4: Semantic Analysis",
+        "layers": [
+          {
+            "name": "Layer 1: Audio Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 2: Visual Artifacts",
+            "prediction": "REAL",
+            "confidence": 0.7974882923997939,
+            "time": 1.9285435676574707,
+            "details": {
+              "avg_fake_probability": 0.20251170760020615,
+              "max_fake_probability": 0.9165216088294983,
+              "num_faces_analyzed": 11,
+              "threshold": 0.5
+            }
+          },
+          {
+            "name": "Layer 3: Lip-Sync Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 4: Semantic Analysis",
+            "prediction": "FAKE",
+            "confidence": 0.5043820142745972,
+            "time": 0.1848301887512207,
+            "details": {
+              "avg_fake_probability": 0.5043820142745972,
+              "max_fake_probability": 0.5433911681175232,
+              "num_frames_analyzed": 10,
+              "threshold": 0.5,
+              "per_frame_probs": [
+                0.5261015892028809,
+                0.5197585225105286,
+                0.5337864756584167,
+                0.49293991923332214,
+                0.48654794692993164,
+                0.5433911681175232,
+                0.4981447458267212,
+                0.4865768253803253,
+                0.46723008155822754,
+                0.4893428087234497
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "video": "Test-Video/Celeb-real/id61_0009.mp4",
+        "ground_truth": "REAL",
+        "prediction": "FAKE",
+        "correct": false,
+        "confidence": 0.5079201459884644,
+        "total_time": 2.042757987976074,
+        "stopped_at": "Layer 4: Semantic Analysis",
+        "layers": [
+          {
+            "name": "Layer 1: Audio Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 2: Visual Artifacts",
+            "prediction": "REAL",
+            "confidence": 0.7413228586316108,
+            "time": 1.8270063400268555,
+            "details": {
+              "avg_fake_probability": 0.25867714136838915,
+              "max_fake_probability": 0.4362398087978363,
+              "num_faces_analyzed": 10,
+              "threshold": 0.5
+            }
+          },
+          {
+            "name": "Layer 3: Lip-Sync Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 4: Semantic Analysis",
+            "prediction": "FAKE",
+            "confidence": 0.5079201459884644,
+            "time": 0.18425869941711426,
+            "details": {
+              "avg_fake_probability": 0.5079201459884644,
+              "max_fake_probability": 0.5314425230026245,
+              "num_frames_analyzed": 10,
+              "threshold": 0.5,
+              "per_frame_probs": [
+                0.5314425230026245,
+                0.5217474102973938,
+                0.49215617775917053,
+                0.5291213989257812,
+                0.5196402668952942,
+                0.4975043535232544,
+                0.5241132974624634,
+                0.4889476001262665,
+                0.4892870783805847,
+                0.48524147272109985
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "video": "Test-Video/Celeb-real/id60_0005.mp4",
+        "ground_truth": "REAL",
+        "prediction": "REAL",
+        "correct": true,
+        "confidence": 0.5169104039669037,
+        "total_time": 2.038843870162964,
+        "stopped_at": "Layer 4: Semantic Analysis",
+        "layers": [
+          {
+            "name": "Layer 1: Audio Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 2: Visual Artifacts",
+            "prediction": "FAKE",
+            "confidence": 0.7054542854428292,
+            "time": 1.8211615085601807,
+            "details": {
+              "avg_fake_probability": 0.7054542854428292,
+              "max_fake_probability": 0.9717139005661011,
+              "num_faces_analyzed": 10,
+              "threshold": 0.5
+            }
+          },
+          {
+            "name": "Layer 3: Lip-Sync Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 4: Semantic Analysis",
+            "prediction": "REAL",
+            "confidence": 0.5169104039669037,
+            "time": 0.1835460662841797,
+            "details": {
+              "avg_fake_probability": 0.4830895960330963,
+              "max_fake_probability": 0.5392663478851318,
+              "num_frames_analyzed": 10,
+              "threshold": 0.5,
+              "per_frame_probs": [
+                0.47328370809555054,
+                0.5392663478851318,
+                0.5046746730804443,
+                0.5351073145866394,
+                0.4612404704093933,
+                0.4553014039993286,
+                0.43993377685546875,
+                0.45387041568756104,
+                0.4565296471118927,
+                0.5116875767707825
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "video": "Test-Video/Celeb-real/id61_0006.mp4",
+        "ground_truth": "REAL",
+        "prediction": "FAKE",
+        "correct": false,
+        "confidence": 0.5058915019035339,
+        "total_time": 2.031658172607422,
+        "stopped_at": "Layer 4: Semantic Analysis",
+        "layers": [
+          {
+            "name": "Layer 1: Audio Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 2: Visual Artifacts",
+            "prediction": "REAL",
+            "confidence": 0.5020922765135765,
+            "time": 1.815995454788208,
+            "details": {
+              "avg_fake_probability": 0.4979077234864235,
+              "max_fake_probability": 0.9553655385971069,
+              "num_faces_analyzed": 10,
+              "threshold": 0.5
+            }
+          },
+          {
+            "name": "Layer 3: Lip-Sync Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 4: Semantic Analysis",
+            "prediction": "FAKE",
+            "confidence": 0.5058915019035339,
+            "time": 0.18221354484558105,
+            "details": {
+              "avg_fake_probability": 0.5058915019035339,
+              "max_fake_probability": 0.5335873365402222,
+              "num_frames_analyzed": 10,
+              "threshold": 0.5,
+              "per_frame_probs": [
+                0.5052353143692017,
+                0.5113788843154907,
+                0.5335873365402222,
+                0.5208762884140015,
+                0.50685054063797,
+                0.4817412793636322,
+                0.4759373068809509,
+                0.5004068613052368,
+                0.5146467089653015,
+                0.5082548260688782
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "fake_videos": {
+    "correct": 7,
+    "incorrect": 1,
+    "errors": 0,
+    "details": [
+      {
+        "video": "Test-Video/Fake/01_03__hugging_happy__ISF9SP4G.mp4",
+        "ground_truth": "FAKE",
+        "prediction": "FAKE",
+        "correct": true,
+        "confidence": 0.6765160232782363,
+        "total_time": 3.4163098335266113,
+        "stopped_at": "Layer 4: Semantic Analysis",
+        "layers": [
+          {
+            "name": "Layer 1: Audio Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 2: Visual Artifacts",
+            "prediction": "FAKE",
+            "confidence": 0.6765160232782363,
+            "time": 2.4382681846618652,
+            "details": {
+              "avg_fake_probability": 0.6765160232782363,
+              "max_fake_probability": 0.9906927943229675,
+              "num_faces_analyzed": 13,
+              "threshold": 0.5
+            }
+          },
+          {
+            "name": "Layer 3: Lip-Sync Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 4: Semantic Analysis",
+            "prediction": "FAKE",
+            "confidence": 0.5359119772911072,
+            "time": 0.9307501316070557,
+            "details": {
+              "avg_fake_probability": 0.5359119772911072,
+              "max_fake_probability": 0.580843448638916,
+              "num_frames_analyzed": 10,
+              "threshold": 0.5,
+              "per_frame_probs": [
+                0.580843448638916,
+                0.5455887913703918,
+                0.5263089537620544,
+                0.5320702195167542,
+                0.5332034826278687,
+                0.544744074344635,
+                0.5081457495689392,
+                0.5200884342193604,
+                0.5547037720680237,
+                0.5134230256080627
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "video": "Test-Video/Fake/20251214_2115_New Video_simple_compose_01kcerkqegez9snkd7tmx969rs.mp4",
+        "ground_truth": "FAKE",
+        "prediction": "FAKE",
+        "correct": true,
+        "confidence": 0.7618849277496338,
+        "total_time": 2.311002492904663,
+        "stopped_at": "Layer 4: Semantic Analysis",
+        "layers": [
+          {
+            "name": "Layer 1: Audio Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 2: Visual Artifacts",
+            "prediction": "FAKE",
+            "confidence": 0.7618849277496338,
+            "time": 1.9466750621795654,
+            "details": {
+              "avg_fake_probability": 0.7618849277496338,
+              "max_fake_probability": 0.9322818517684937,
+              "num_faces_analyzed": 14,
+              "threshold": 0.5
+            }
+          },
+          {
+            "name": "Layer 3: Lip-Sync Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 4: Semantic Analysis",
+            "prediction": "FAKE",
+            "confidence": 0.5307925939559937,
+            "time": 0.3260080814361572,
+            "details": {
+              "avg_fake_probability": 0.5307925939559937,
+              "max_fake_probability": 0.5582476258277893,
+              "num_frames_analyzed": 10,
+              "threshold": 0.5,
+              "per_frame_probs": [
+                0.5582476258277893,
+                0.5273558497428894,
+                0.5305233597755432,
+                0.5042905807495117,
+                0.550233006477356,
+                0.5223950743675232,
+                0.5474294424057007,
+                0.5256736278533936,
+                0.4928761422634125,
+                0.5489017963409424
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "video": "Test-Video/Fake/20251214_2115_New Video_simple_compose_01kcerkqdkexmtad54h2s9fw9p.mp4",
+        "ground_truth": "FAKE",
+        "prediction": "FAKE",
+        "correct": true,
+        "confidence": 0.8920574843883514,
+        "total_time": 2.3926374912261963,
+        "stopped_at": "Layer 4: Semantic Analysis",
+        "layers": [
+          {
+            "name": "Layer 1: Audio Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 2: Visual Artifacts",
+            "prediction": "FAKE",
+            "confidence": 0.8920574843883514,
+            "time": 2.032198905944824,
+            "details": {
+              "avg_fake_probability": 0.8920574843883514,
+              "max_fake_probability": 0.9753323197364807,
+              "num_faces_analyzed": 15,
+              "threshold": 0.5
+            }
+          },
+          {
+            "name": "Layer 3: Lip-Sync Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 4: Semantic Analysis",
+            "prediction": "FAKE",
+            "confidence": 0.5405980348587036,
+            "time": 0.3223733901977539,
+            "details": {
+              "avg_fake_probability": 0.5405980348587036,
+              "max_fake_probability": 0.5709489583969116,
+              "num_frames_analyzed": 10,
+              "threshold": 0.5,
+              "per_frame_probs": [
+                0.5433984398841858,
+                0.5514586567878723,
+                0.5506108999252319,
+                0.5443829894065857,
+                0.5709489583969116,
+                0.5424448251724243,
+                0.5466831922531128,
+                0.5209932923316956,
+                0.5091457366943359,
+                0.5259132981300354
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "video": "Test-Video/Celeb-synthesis/id53_id56_0008.mp4",
+        "ground_truth": "FAKE",
+        "prediction": "REAL",
+        "correct": false,
+        "confidence": 0.5160559713840485,
+        "total_time": 2.0113630294799805,
+        "stopped_at": "Layer 4: Semantic Analysis",
+        "layers": [
+          {
+            "name": "Layer 1: Audio Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 2: Visual Artifacts",
+            "prediction": "FAKE",
+            "confidence": 0.7366345226764679,
+            "time": 1.7961971759796143,
+            "details": {
+              "avg_fake_probability": 0.7366345226764679,
+              "max_fake_probability": 0.9943763017654419,
+              "num_faces_analyzed": 10,
+              "threshold": 0.5
+            }
+          },
+          {
+            "name": "Layer 3: Lip-Sync Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 4: Semantic Analysis",
+            "prediction": "REAL",
+            "confidence": 0.5160559713840485,
+            "time": 0.18277359008789062,
+            "details": {
+              "avg_fake_probability": 0.48394402861595154,
+              "max_fake_probability": 0.5289271473884583,
+              "num_frames_analyzed": 10,
+              "threshold": 0.5,
+              "per_frame_probs": [
+                0.46506643295288086,
+                0.46696531772613525,
+                0.4550638198852539,
+                0.4804214835166931,
+                0.4579944908618927,
+                0.49860265851020813,
+                0.5289271473884583,
+                0.49079400300979614,
+                0.4846620261669159,
+                0.5109426975250244
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "video": "Test-Video/Celeb-synthesis/id28_id19_0008.mp4",
+        "ground_truth": "FAKE",
+        "prediction": "FAKE",
+        "correct": true,
+        "confidence": 0.9338289678096772,
+        "total_time": 2.0269010066986084,
+        "stopped_at": "Layer 4: Semantic Analysis",
+        "layers": [
+          {
+            "name": "Layer 1: Audio Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 2: Visual Artifacts",
+            "prediction": "FAKE",
+            "confidence": 0.9338289678096772,
+            "time": 1.8097507953643799,
+            "details": {
+              "avg_fake_probability": 0.9338289678096772,
+              "max_fake_probability": 0.9992709755897522,
+              "num_faces_analyzed": 10,
+              "threshold": 0.5
+            }
+          },
+          {
+            "name": "Layer 3: Lip-Sync Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 4: Semantic Analysis",
+            "prediction": "FAKE",
+            "confidence": 0.5837515592575073,
+            "time": 0.1855919361114502,
+            "details": {
+              "avg_fake_probability": 0.5837515592575073,
+              "max_fake_probability": 0.609592616558075,
+              "num_frames_analyzed": 10,
+              "threshold": 0.5,
+              "per_frame_probs": [
+                0.5694690942764282,
+                0.5681706666946411,
+                0.5841308832168579,
+                0.5986021161079407,
+                0.570719838142395,
+                0.5895106196403503,
+                0.6065024137496948,
+                0.609592616558075,
+                0.5878552794456482,
+                0.5529624819755554
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "video": "Test-Video/Celeb-synthesis/id26_id1_0004.mp4",
+        "ground_truth": "FAKE",
+        "prediction": "FAKE",
+        "correct": true,
+        "confidence": 0.6946437239646912,
+        "total_time": 1.9701917171478271,
+        "stopped_at": "Layer 4: Semantic Analysis",
+        "layers": [
+          {
+            "name": "Layer 1: Audio Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 2: Visual Artifacts",
+            "prediction": "FAKE",
+            "confidence": 0.6946437239646912,
+            "time": 1.7590792179107666,
+            "details": {
+              "avg_fake_probability": 0.6946437239646912,
+              "max_fake_probability": 0.9869415163993835,
+              "num_faces_analyzed": 10,
+              "threshold": 0.5
+            }
+          },
+          {
+            "name": "Layer 3: Lip-Sync Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 4: Semantic Analysis",
+            "prediction": "FAKE",
+            "confidence": 0.5531002879142761,
+            "time": 0.17923712730407715,
+            "details": {
+              "avg_fake_probability": 0.5531002879142761,
+              "max_fake_probability": 0.612521767616272,
+              "num_frames_analyzed": 10,
+              "threshold": 0.5,
+              "per_frame_probs": [
+                0.5862976312637329,
+                0.5592212080955505,
+                0.5462382435798645,
+                0.5302146077156067,
+                0.5713331699371338,
+                0.612521767616272,
+                0.5324996709823608,
+                0.5198579430580139,
+                0.5418282151222229,
+                0.530990719795227
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "video": "Test-Video/Celeb-synthesis/id9_id17_0005.mp4",
+        "ground_truth": "FAKE",
+        "prediction": "FAKE",
+        "correct": true,
+        "confidence": 0.9639357328414917,
+        "total_time": 2.0589346885681152,
+        "stopped_at": "Layer 4: Semantic Analysis",
+        "layers": [
+          {
+            "name": "Layer 1: Audio Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 2: Visual Artifacts",
+            "prediction": "FAKE",
+            "confidence": 0.9639357328414917,
+            "time": 1.8401024341583252,
+            "details": {
+              "avg_fake_probability": 0.9639357328414917,
+              "max_fake_probability": 0.9995635151863098,
+              "num_faces_analyzed": 10,
+              "threshold": 0.5
+            }
+          },
+          {
+            "name": "Layer 3: Lip-Sync Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 4: Semantic Analysis",
+            "prediction": "FAKE",
+            "confidence": 0.5232890248298645,
+            "time": 0.18716859817504883,
+            "details": {
+              "avg_fake_probability": 0.5232890248298645,
+              "max_fake_probability": 0.541459858417511,
+              "num_frames_analyzed": 10,
+              "threshold": 0.5,
+              "per_frame_probs": [
+                0.541459858417511,
+                0.5319287180900574,
+                0.5227870345115662,
+                0.49926960468292236,
+                0.5404989123344421,
+                0.53876793384552,
+                0.5083838105201721,
+                0.5114800333976746,
+                0.5375859141349792,
+                0.5007285475730896
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "video": "Test-Video/Celeb-synthesis/id16_id6_0010.mp4",
+        "ground_truth": "FAKE",
+        "prediction": "FAKE",
+        "correct": true,
+        "confidence": 0.8685160517692566,
+        "total_time": 2.0476322174072266,
+        "stopped_at": "Layer 4: Semantic Analysis",
+        "layers": [
+          {
+            "name": "Layer 1: Audio Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 2: Visual Artifacts",
+            "prediction": "FAKE",
+            "confidence": 0.8685160517692566,
+            "time": 1.8227267265319824,
+            "details": {
+              "avg_fake_probability": 0.8685160517692566,
+              "max_fake_probability": 0.9907225370407104,
+              "num_faces_analyzed": 10,
+              "threshold": 0.5
+            }
+          },
+          {
+            "name": "Layer 3: Lip-Sync Analysis",
+            "prediction": "REAL",
+            "confidence": 0.0,
+            "time": 0.0,
+            "details": {
+              "skipped": "No audio stream in video"
+            }
+          },
+          {
+            "name": "Layer 4: Semantic Analysis",
+            "prediction": "FAKE",
+            "confidence": 0.5436450242996216,
+            "time": 0.19190669059753418,
+            "details": {
+              "avg_fake_probability": 0.5436450242996216,
+              "max_fake_probability": 0.5723868608474731,
+              "num_frames_analyzed": 10,
+              "threshold": 0.5,
+              "per_frame_probs": [
+                0.5376062989234924,
+                0.5580344200134277,
+                0.561164140701294,
+                0.5322946310043335,
+                0.5508273243904114,
+                0.5165367126464844,
+                0.5235052704811096,
+                0.5355666279792786,
+                0.5485283136367798,
+                0.5723868608474731
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "layer_stats": {
+    "Layer 1: Audio Analysis": {
+      "real_correct": 12,
+      "real_fake": 0,
+      "fake_correct": 0,
+      "fake_real": 8
+    },
+    "Layer 2: Visual Artifacts": {
+      "real_correct": 9,
+      "real_fake": 3,
+      "fake_correct": 8,
+      "fake_real": 0
+    },
+    "Layer 3: Lip-Sync Analysis": {
+      "real_correct": 12,
+      "real_fake": 0,
+      "fake_correct": 0,
+      "fake_real": 8
+    },
+    "Layer 4: Semantic Analysis": {
+      "real_correct": 6,
+      "real_fake": 6,
+      "fake_correct": 7,
+      "fake_real": 1
+    }
+  }
+}

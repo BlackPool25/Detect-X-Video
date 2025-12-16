@@ -1,0 +1,51 @@
+# 4-Layer Deepfake Detection Pipeline Requirements
+
+# Core ML frameworks
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Transformers for Wav2Vec2
+transformers>=4.30.0
+
+# EfficientNet
+efficientnet-pytorch>=0.7.1
+
+# CLIP - use OpenAI's official implementation
+git+https://github.com/openai/CLIP.git
+
+# Vision models
+ftfy>=6.1.0
+regex>=2023.0.0
+
+# Video processing
+opencv-python>=4.8.0
+ffmpeg-python>=0.2.0
+
+# Audio processing
+librosa>=0.10.0
+soundfile>=0.12.0
+python-speech-features>=0.6
+
+# Face detection (RetinaFace)
+retina-face>=0.0.13
+
+# Image processing
+Pillow>=9.5.0
+scikit-image>=0.21.0
+
+# Scientific computing
+numpy>=1.24.0,<2.0.0
+scipy>=1.11.0
+scikit-learn>=1.3.0
+
+# Database
+supabase>=1.0.0
+
+# Utilities
+tqdm>=4.65.0
+pandas>=2.0.0
+
+# Additional utilities
+python-dotenv>=1.0.0
+pydantic>=2.0.0

@@ -126,3 +126,8 @@ __pycache__/
 
 # Nested git repositories
 AI-Website/
+# External research repos / vendored code
+LipForensics/
+SelfBlendedImages/
+UniversalFakeDetect/
+syncnet_python/

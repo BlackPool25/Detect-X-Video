@@ -1,0 +1,799 @@
+/home/lightdesk/Projects/AI-Detector/.venv/lib/python3.12/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/home/lightdesk/Projects/AI-Detector/.venv/lib/python3.12/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/home/lightdesk/Projects/AI-Detector/.venv/lib/python3.12/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/home/lightdesk/Projects/AI-Detector/.venv/lib/python3.12/site-packages/albumentations/__init__.py:13: UserWarning: A new version of Albumentations is available: 2.0.8 (you have 1.4.18). Upgrade using: pip install -U albumentations. To disable automatic update checks, set the environment variable NO_ALBUMENTATIONS_UPDATE to 1.
+  check_for_updates()
+/home/lightdesk/Projects/AI-Video/UniversalFakeDetect/models/clip/clip.py:6: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import packaging
+/home/lightdesk/Projects/AI-Video/pipeline_production.py:206: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(weights_path, map_location=device)
+/home/lightdesk/Projects/AI-Detector/.venv/lib/python3.12/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/lightdesk/Projects/AI-Detector/.venv/lib/python3.12/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+/home/lightdesk/Projects/AI-Detector/.venv/lib/python3.12/site-packages/torch/hub.py:870: FutureWarning: Falling back to the old format < 1.6. This support will be deprecated in favor of default zipfile format introduced in 1.6. Please redo torch.save() to save it in the new zipfile format.
+  return _legacy_zip_load(cached_file, model_dir, map_location, weights_only)
+/home/lightdesk/Projects/AI-Video/syncnet_python/SyncNetInstance.py:202: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  loaded_state = torch.load(path, map_location=lambda storage, loc: storage);
+/home/lightdesk/Projects/AI-Video/pipeline_production.py:242: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  faces_tensor = torch.tensor(face_list).float() / 255.0
+/home/lightdesk/Projects/AI-Detector/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py:125: UserWarning: Attempting to use hipBLASLt on an unsupported architecture! Overriding blas backend to hipblas (Triggered internally at ../aten/src/ATen/Context.cpp:296.)
+  return F.linear(input, self.weight, self.bias)
+/home/lightdesk/Projects/AI-Detector/.venv/lib/python3.12/site-packages/torch/nn/functional.py:6278: UserWarning: Flash attention support on Navi31 GPU is still experimental. Enable it with TORCH_ROCM_AOTRITON_ENABLE_EXPERIMENTAL=1. (Triggered internally at ../aten/src/ATen/native/transformers/hip/sdp_utils.cpp:225.)
+  attn_output = scaled_dot_product_attention(
+/home/lightdesk/Projects/AI-Detector/.venv/lib/python3.12/site-packages/torch/nn/functional.py:6278: UserWarning: Memory Efficient attention on Navi31 GPU is still experimental. Enable it with TORCH_ROCM_AOTRITON_ENABLE_EXPERIMENTAL=1. (Triggered internally at ../aten/src/ATen/native/transformers/hip/sdp_utils.cpp:269.)
+  attn_output = scaled_dot_product_attention(
+
+================================================================================
+INITIALIZING TEST SUITE
+================================================================================
+================================================================================
+Initializing 4-Layer Deepfake Detection Pipeline
+================================================================================
+Loading Layer 1: Wav2Vec2 Audio Detector...
+⚠ NOTE: Wav2Vec2 is not trained for deepfake detection.
+   Using it as a baseline feature extractor only.
+Loading Layer 2: SBI Visual Artifact Detector...
+Loaded pretrained weights for efficientnet-b4
+Loading Layer 3: SyncNet Lip-Sync Detector...
+Loading Layer 4: UniversalFakeDetect CLIP Detector...
+================================================================================
+✓ All layers loaded successfully
+================================================================================
+
+================================================================================
+Testing 2 videos from Test-Video/Real
+Expected: REAL
+================================================================================
+
+================================================================================
+Testing: 00003.mp4
+Ground Truth: REAL
+================================================================================
+
+================================================================================
+Analyzing: 00003.mp4
+================================================================================
+
+⚠ Video has no audio stream - skipping audio-based layers (1 and 3)
+► Skipping Layer 1: Audio Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 2: Visual Artifacts...
+  Result: FAKE (confidence: 99.33%, time: 2.05s)
+
+► Skipping Layer 3: Lip-Sync Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 4: Semantic Analysis...
+  Result: FAKE (confidence: 75.31%, time: 0.20s)
+
+================================================================================
+FINAL VERDICT: FAKE
+Confidence: 99.33%
+Stopped at: Layer 4: Semantic Analysis
+Total time: 2.28s
+================================================================================
+
+
+✗ WRONG
+Prediction: FAKE (Confidence: 99.33%)
+Time: 2.28s
+
+================================================================================
+Testing: 00009.mp4
+Ground Truth: REAL
+================================================================================
+
+================================================================================
+Analyzing: 00009.mp4
+================================================================================
+
+⚠ Video has no audio stream - skipping audio-based layers (1 and 3)
+► Skipping Layer 1: Audio Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 2: Visual Artifacts...
+  Result: FAKE (confidence: 99.72%, time: 1.79s)
+
+► Skipping Layer 3: Lip-Sync Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 4: Semantic Analysis...
+  Result: FAKE (confidence: 66.72%, time: 0.19s)
+
+================================================================================
+FINAL VERDICT: FAKE
+Confidence: 99.72%
+Stopped at: Layer 4: Semantic Analysis
+Total time: 2.01s
+================================================================================
+
+
+✗ WRONG
+Prediction: FAKE (Confidence: 99.72%)
+Time: 2.01s
+
+================================================================================
+Testing 5 videos from Test-Video/YouTube-real
+Expected: REAL
+================================================================================
+
+================================================================================
+Testing: 00276.mp4
+Ground Truth: REAL
+================================================================================
+
+================================================================================
+Analyzing: 00276.mp4
+================================================================================
+
+⚠ Video has no audio stream - skipping audio-based layers (1 and 3)
+► Skipping Layer 1: Audio Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 2: Visual Artifacts...
+  Result: REAL (confidence: 86.99%, time: 1.77s)
+
+► Skipping Layer 3: Lip-Sync Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 4: Semantic Analysis...
+  Result: REAL (confidence: 42.32%, time: 0.18s)
+
+================================================================================
+FINAL VERDICT: REAL
+Confidence: 86.99%
+Stopped at: Layer 4: Semantic Analysis
+Total time: 1.98s
+================================================================================
+
+
+✓ CORRECT
+Prediction: REAL (Confidence: 86.99%)
+Time: 1.98s
+
+================================================================================
+Testing: 00030.mp4
+Ground Truth: REAL
+================================================================================
+
+================================================================================
+Analyzing: 00030.mp4
+================================================================================
+
+⚠ Video has no audio stream - skipping audio-based layers (1 and 3)
+► Skipping Layer 1: Audio Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 2: Visual Artifacts...
+  Result: FAKE (confidence: 76.93%, time: 1.76s)
+
+► Skipping Layer 3: Lip-Sync Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 4: Semantic Analysis...
+  Result: FAKE (confidence: 70.42%, time: 0.18s)
+
+================================================================================
+FINAL VERDICT: FAKE
+Confidence: 76.93%
+Stopped at: Layer 4: Semantic Analysis
+Total time: 1.98s
+================================================================================
+
+
+✗ WRONG
+Prediction: FAKE (Confidence: 76.93%)
+Time: 1.98s
+
+================================================================================
+Testing: 00204.mp4
+Ground Truth: REAL
+================================================================================
+
+================================================================================
+Analyzing: 00204.mp4
+================================================================================
+
+⚠ Video has no audio stream - skipping audio-based layers (1 and 3)
+► Skipping Layer 1: Audio Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 2: Visual Artifacts...
+  Result: FAKE (confidence: 88.49%, time: 1.76s)
+
+► Skipping Layer 3: Lip-Sync Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 4: Semantic Analysis...
+  Result: REAL (confidence: 56.21%, time: 0.18s)
+
+================================================================================
+FINAL VERDICT: REAL
+Confidence: 56.21%
+Stopped at: Layer 4: Semantic Analysis
+Total time: 1.98s
+================================================================================
+
+
+✓ CORRECT
+Prediction: REAL (Confidence: 56.21%)
+Time: 1.98s
+
+================================================================================
+Testing: 00189.mp4
+Ground Truth: REAL
+================================================================================
+
+================================================================================
+Analyzing: 00189.mp4
+================================================================================
+
+⚠ Video has no audio stream - skipping audio-based layers (1 and 3)
+► Skipping Layer 1: Audio Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 2: Visual Artifacts...
+  Result: REAL (confidence: 67.68%, time: 1.77s)
+
+► Skipping Layer 3: Lip-Sync Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 4: Semantic Analysis...
+  Result: REAL (confidence: 42.63%, time: 0.19s)
+
+================================================================================
+FINAL VERDICT: REAL
+Confidence: 67.68%
+Stopped at: Layer 4: Semantic Analysis
+Total time: 1.99s
+================================================================================
+
+
+✓ CORRECT
+Prediction: REAL (Confidence: 67.68%)
+Time: 1.99s
+
+================================================================================
+Testing: 00211.mp4
+Ground Truth: REAL
+================================================================================
+
+================================================================================
+Analyzing: 00211.mp4
+================================================================================
+
+⚠ Video has no audio stream - skipping audio-based layers (1 and 3)
+► Skipping Layer 1: Audio Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 2: Visual Artifacts...
+  Result: REAL (confidence: 85.84%, time: 1.77s)
+
+► Skipping Layer 3: Lip-Sync Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 4: Semantic Analysis...
+  Result: REAL (confidence: 47.66%, time: 0.18s)
+
+================================================================================
+FINAL VERDICT: REAL
+Confidence: 85.84%
+Stopped at: Layer 4: Semantic Analysis
+Total time: 1.98s
+================================================================================
+
+
+✓ CORRECT
+Prediction: REAL (Confidence: 85.84%)
+Time: 1.98s
+
+================================================================================
+Testing 5 videos from Test-Video/Celeb-real
+Expected: REAL
+================================================================================
+
+================================================================================
+Testing: id8_0006.mp4
+Ground Truth: REAL
+================================================================================
+
+================================================================================
+Analyzing: id8_0006.mp4
+================================================================================
+
+⚠ Video has no audio stream - skipping audio-based layers (1 and 3)
+► Skipping Layer 1: Audio Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 2: Visual Artifacts...
+  Result: FAKE (confidence: 92.01%, time: 1.79s)
+
+► Skipping Layer 3: Lip-Sync Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 4: Semantic Analysis...
+  Result: FAKE (confidence: 70.13%, time: 0.19s)
+
+================================================================================
+FINAL VERDICT: FAKE
+Confidence: 92.01%
+Stopped at: Layer 4: Semantic Analysis
+Total time: 2.01s
+================================================================================
+
+
+✗ WRONG
+Prediction: FAKE (Confidence: 92.01%)
+Time: 2.01s
+
+================================================================================
+Testing: id33_0001.mp4
+Ground Truth: REAL
+================================================================================
+
+================================================================================
+Analyzing: id33_0001.mp4
+================================================================================
+
+⚠ Video has no audio stream - skipping audio-based layers (1 and 3)
+► Skipping Layer 1: Audio Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 2: Visual Artifacts...
+  Result: FAKE (confidence: 91.65%, time: 1.81s)
+
+► Skipping Layer 3: Lip-Sync Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 4: Semantic Analysis...
+  Result: FAKE (confidence: 67.91%, time: 0.18s)
+
+================================================================================
+FINAL VERDICT: FAKE
+Confidence: 91.65%
+Stopped at: Layer 4: Semantic Analysis
+Total time: 2.02s
+================================================================================
+
+
+✗ WRONG
+Prediction: FAKE (Confidence: 91.65%)
+Time: 2.02s
+
+================================================================================
+Testing: id61_0009.mp4
+Ground Truth: REAL
+================================================================================
+
+================================================================================
+Analyzing: id61_0009.mp4
+================================================================================
+
+⚠ Video has no audio stream - skipping audio-based layers (1 and 3)
+► Skipping Layer 1: Audio Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 2: Visual Artifacts...
+  Result: REAL (confidence: 74.13%, time: 1.76s)
+
+► Skipping Layer 3: Lip-Sync Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 4: Semantic Analysis...
+  Result: FAKE (confidence: 70.03%, time: 0.18s)
+
+================================================================================
+FINAL VERDICT: FAKE
+Confidence: 70.03%
+Stopped at: Layer 4: Semantic Analysis
+Total time: 1.97s
+================================================================================
+
+
+✗ WRONG
+Prediction: FAKE (Confidence: 70.03%)
+Time: 1.97s
+
+================================================================================
+Testing: id60_0005.mp4
+Ground Truth: REAL
+================================================================================
+
+================================================================================
+Analyzing: id60_0005.mp4
+================================================================================
+
+⚠ Video has no audio stream - skipping audio-based layers (1 and 3)
+► Skipping Layer 1: Audio Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 2: Visual Artifacts...
+  Result: FAKE (confidence: 97.17%, time: 1.77s)
+
+► Skipping Layer 3: Lip-Sync Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 4: Semantic Analysis...
+  Result: FAKE (confidence: 73.52%, time: 0.18s)
+
+================================================================================
+FINAL VERDICT: FAKE
+Confidence: 97.17%
+Stopped at: Layer 4: Semantic Analysis
+Total time: 1.99s
+================================================================================
+
+
+✗ WRONG
+Prediction: FAKE (Confidence: 97.17%)
+Time: 1.99s
+
+================================================================================
+Testing: id61_0006.mp4
+Ground Truth: REAL
+================================================================================
+
+================================================================================
+Analyzing: id61_0006.mp4
+================================================================================
+
+⚠ Video has no audio stream - skipping audio-based layers (1 and 3)
+► Skipping Layer 1: Audio Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 2: Visual Artifacts...
+  Result: FAKE (confidence: 95.54%, time: 1.76s)
+
+► Skipping Layer 3: Lip-Sync Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 4: Semantic Analysis...
+  Result: REAL (confidence: 41.63%, time: 0.18s)
+
+================================================================================
+FINAL VERDICT: REAL
+Confidence: 41.63%
+Stopped at: Layer 4: Semantic Analysis
+Total time: 1.98s
+================================================================================
+
+
+✓ CORRECT
+Prediction: REAL (Confidence: 41.63%)
+Time: 1.98s
+
+================================================================================
+Testing 3 videos from Test-Video/Fake
+Expected: FAKE
+================================================================================
+
+================================================================================
+Testing: 01_03__hugging_happy__ISF9SP4G.mp4
+Ground Truth: FAKE
+================================================================================
+
+================================================================================
+Analyzing: 01_03__hugging_happy__ISF9SP4G.mp4
+================================================================================
+
+⚠ Video has no audio stream - skipping audio-based layers (1 and 3)
+► Skipping Layer 1: Audio Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 2: Visual Artifacts...
+  Result: FAKE (confidence: 99.07%, time: 2.38s)
+
+► Skipping Layer 3: Lip-Sync Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 4: Semantic Analysis...
+  Result: FAKE (confidence: 65.78%, time: 0.93s)
+
+================================================================================
+FINAL VERDICT: FAKE
+Confidence: 99.07%
+Stopped at: Layer 4: Semantic Analysis
+Total time: 3.35s
+================================================================================
+
+
+✓ CORRECT
+Prediction: FAKE (Confidence: 99.07%)
+Time: 3.35s
+
+================================================================================
+Testing: 20251214_2115_New Video_simple_compose_01kcerkqegez9snkd7tmx969rs.mp4
+Ground Truth: FAKE
+================================================================================
+
+================================================================================
+Analyzing: 20251214_2115_New Video_simple_compose_01kcerkqegez9snkd7tmx969rs.mp4
+================================================================================
+
+⚠ Video has no audio stream - skipping audio-based layers (1 and 3)
+► Skipping Layer 1: Audio Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 2: Visual Artifacts...
+error in 149:Test-Video/Fake/20251214_2115_New Video_simple_compose_01kcerkqegez9snkd7tmx969rs.mp4
+not enough values to unpack (expected 4, got 0)
+  Result: FAKE (confidence: 93.23%, time: 5.19s)
+
+► Skipping Layer 3: Lip-Sync Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 4: Semantic Analysis...
+  Result: FAKE (confidence: 76.87%, time: 0.32s)
+
+================================================================================
+FINAL VERDICT: FAKE
+Confidence: 93.23%
+Stopped at: Layer 4: Semantic Analysis
+Total time: 5.55s
+================================================================================
+
+
+✓ CORRECT
+Prediction: FAKE (Confidence: 93.23%)
+Time: 5.55s
+
+================================================================================
+Testing: 20251214_2115_New Video_simple_compose_01kcerkqdkexmtad54h2s9fw9p.mp4
+Ground Truth: FAKE
+================================================================================
+
+================================================================================
+Analyzing: 20251214_2115_New Video_simple_compose_01kcerkqdkexmtad54h2s9fw9p.mp4
+================================================================================
+
+⚠ Video has no audio stream - skipping audio-based layers (1 and 3)
+► Skipping Layer 1: Audio Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 2: Visual Artifacts...
+  Result: FAKE (confidence: 97.53%, time: 5.42s)
+
+► Skipping Layer 3: Lip-Sync Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 4: Semantic Analysis...
+  Result: FAKE (confidence: 76.78%, time: 0.32s)
+
+================================================================================
+FINAL VERDICT: FAKE
+Confidence: 97.53%
+Stopped at: Layer 4: Semantic Analysis
+Total time: 5.78s
+================================================================================
+
+
+✓ CORRECT
+Prediction: FAKE (Confidence: 97.53%)
+Time: 5.78s
+
+================================================================================
+Testing 5 videos from Test-Video/Celeb-synthesis
+Expected: FAKE
+================================================================================
+
+================================================================================
+Testing: id53_id56_0008.mp4
+Ground Truth: FAKE
+================================================================================
+
+================================================================================
+Analyzing: id53_id56_0008.mp4
+================================================================================
+
+⚠ Video has no audio stream - skipping audio-based layers (1 and 3)
+► Skipping Layer 1: Audio Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 2: Visual Artifacts...
+  Result: FAKE (confidence: 99.44%, time: 1.76s)
+
+► Skipping Layer 3: Lip-Sync Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 4: Semantic Analysis...
+  Result: FAKE (confidence: 66.89%, time: 0.18s)
+
+================================================================================
+FINAL VERDICT: FAKE
+Confidence: 99.44%
+Stopped at: Layer 4: Semantic Analysis
+Total time: 1.97s
+================================================================================
+
+
+✓ CORRECT
+Prediction: FAKE (Confidence: 99.44%)
+Time: 1.97s
+
+================================================================================
+Testing: id28_id19_0008.mp4
+Ground Truth: FAKE
+================================================================================
+
+================================================================================
+Analyzing: id28_id19_0008.mp4
+================================================================================
+
+⚠ Video has no audio stream - skipping audio-based layers (1 and 3)
+► Skipping Layer 1: Audio Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 2: Visual Artifacts...
+  Result: FAKE (confidence: 99.93%, time: 1.74s)
+
+► Skipping Layer 3: Lip-Sync Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 4: Semantic Analysis...
+  Result: FAKE (confidence: 76.71%, time: 0.19s)
+
+================================================================================
+FINAL VERDICT: FAKE
+Confidence: 99.93%
+Stopped at: Layer 4: Semantic Analysis
+Total time: 1.96s
+================================================================================
+
+
+✓ CORRECT
+Prediction: FAKE (Confidence: 99.93%)
+Time: 1.96s
+
+================================================================================
+Testing: id26_id1_0004.mp4
+Ground Truth: FAKE
+================================================================================
+
+================================================================================
+Analyzing: id26_id1_0004.mp4
+================================================================================
+
+⚠ Video has no audio stream - skipping audio-based layers (1 and 3)
+► Skipping Layer 1: Audio Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 2: Visual Artifacts...
+  Result: FAKE (confidence: 98.69%, time: 1.73s)
+
+► Skipping Layer 3: Lip-Sync Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 4: Semantic Analysis...
+  Result: FAKE (confidence: 68.91%, time: 0.18s)
+
+================================================================================
+FINAL VERDICT: FAKE
+Confidence: 98.69%
+Stopped at: Layer 4: Semantic Analysis
+Total time: 1.94s
+================================================================================
+
+
+✓ CORRECT
+Prediction: FAKE (Confidence: 98.69%)
+Time: 1.94s
+
+================================================================================
+Testing: id9_id17_0005.mp4
+Ground Truth: FAKE
+================================================================================
+
+================================================================================
+Analyzing: id9_id17_0005.mp4
+================================================================================
+
+⚠ Video has no audio stream - skipping audio-based layers (1 and 3)
+► Skipping Layer 1: Audio Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 2: Visual Artifacts...
+  Result: FAKE (confidence: 99.96%, time: 1.76s)
+
+► Skipping Layer 3: Lip-Sync Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 4: Semantic Analysis...
+  Result: REAL (confidence: 46.36%, time: 0.19s)
+
+================================================================================
+FINAL VERDICT: REAL
+Confidence: 46.36%
+Stopped at: Layer 4: Semantic Analysis
+Total time: 1.98s
+================================================================================
+
+
+✗ WRONG
+Prediction: REAL (Confidence: 46.36%)
+Time: 1.98s
+
+================================================================================
+Testing: id16_id6_0010.mp4
+Ground Truth: FAKE
+================================================================================
+
+================================================================================
+Analyzing: id16_id6_0010.mp4
+================================================================================
+
+⚠ Video has no audio stream - skipping audio-based layers (1 and 3)
+► Skipping Layer 1: Audio Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 2: Visual Artifacts...
+  Result: FAKE (confidence: 99.07%, time: 1.75s)
+
+► Skipping Layer 3: Lip-Sync Analysis (no audio stream)
+  Result: REAL (confidence: 0.00%, time: 0.00s)
+
+► Running Layer 4: Semantic Analysis...
+  Result: FAKE (confidence: 67.14%, time: 0.19s)
+
+================================================================================
+FINAL VERDICT: FAKE
+Confidence: 99.07%
+Stopped at: Layer 4: Semantic Analysis
+Total time: 1.97s
+================================================================================
+
+
+✓ CORRECT
+Prediction: FAKE (Confidence: 99.07%)
+Time: 1.97s
+
+================================================================================
+COMPREHENSIVE TEST SUMMARY
+================================================================================
+
+Total Videos Tested: 20
+  Real Videos: 12
+  Fake Videos: 8
+
+--------------------------------------------------------------------------------
+OVERALL ACCURACY
+--------------------------------------------------------------------------------
+Real Videos: 5/12 correct (41.7%)
+  ⚠ False Positives (Real marked as Fake): 7
+Fake Videos: 7/8 correct (87.5%)
+  ⚠ False Negatives (Fake marked as Real): 1
+
+Overall Accuracy: 60.0%
+
+--------------------------------------------------------------------------------
+LAYER-BY-LAYER PERFORMANCE
+--------------------------------------------------------------------------------
+
+Layer 1: Audio Analysis:
+  Real Videos: 12/12 correct (100.0%)
+  Fake Videos: 0/8 correct (0.0%)
+    ⚠ False Negatives: 8
+
+Layer 2: Visual Artifacts:
+  Real Videos: 4/12 correct (33.3%)
+    ⚠ False Positives: 8
+  Fake Videos: 8/8 correct (100.0%)
+
+Layer 3: Lip-Sync Analysis:
+  Real Videos: 12/12 correct (100.0%)
+  Fake Videos: 0/8 correct (0.0%)
+    ⚠ False Negatives: 8
+
+Layer 4: Semantic Analysis:
+  Real Videos: 5/12 correct (41.7%)
+    ⚠ False Positives: 7
+  Fake Videos: 7/8 correct (87.5%)
+    ⚠ False Negatives: 1
+
+================================================================================
+
+✓ Detailed results saved to test_results_fixed.json
