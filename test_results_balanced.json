@@ -1,0 +1,168 @@
+{
+  "accuracy": 0.75,
+  "real_accuracy": 1.0,
+  "fake_accuracy": 0.5,
+  "avg_time": 2.7059279918670653,
+  "results": [
+    {
+      "video": "aagfhgtpmv.mp4",
+      "truth": "FAKE",
+      "prediction": "FAKE",
+      "confidence": 0.36531207715902503,
+      "time": 3.5723588466644287,
+      "correct": true
+    },
+    {
+      "video": "aapnvogymq.mp4",
+      "truth": "FAKE",
+      "prediction": "FAKE",
+      "confidence": 0.6430950634969907,
+      "time": 3.031313896179199,
+      "correct": true
+    },
+    {
+      "video": "abofeumbvv.mp4",
+      "truth": "FAKE",
+      "prediction": "FAKE",
+      "confidence": 0.45240740180015565,
+      "time": 2.319870948791504,
+      "correct": true
+    },
+    {
+      "video": "abqwwspghj.mp4",
+      "truth": "FAKE",
+      "prediction": "REAL",
+      "confidence": 0.7944714092183859,
+      "time": 2.5307319164276123,
+      "correct": false
+    },
+    {
+      "video": "acifjvzvpm.mp4",
+      "truth": "FAKE",
+      "prediction": "REAL",
+      "confidence": 0.9078165314439685,
+      "time": 2.65366268157959,
+      "correct": false
+    },
+    {
+      "video": "acqfdwsrhi.mp4",
+      "truth": "FAKE",
+      "prediction": "REAL",
+      "confidence": 0.9335054005077109,
+      "time": 2.6143980026245117,
+      "correct": false
+    },
+    {
+      "video": "acxnxvbsxk.mp4",
+      "truth": "FAKE",
+      "prediction": "REAL",
+      "confidence": 0.8158871570136399,
+      "time": 2.547239303588867,
+      "correct": false
+    },
+    {
+      "video": "acxwigylke.mp4",
+      "truth": "FAKE",
+      "prediction": "REAL",
+      "confidence": 0.7604432471841575,
+      "time": 2.7565267086029053,
+      "correct": false
+    },
+    {
+      "video": "aczrgyricp.mp4",
+      "truth": "FAKE",
+      "prediction": "FAKE",
+      "confidence": 0.5121240362524987,
+      "time": 2.7064523696899414,
+      "correct": true
+    },
+    {
+      "video": "adhsbajydo.mp4",
+      "truth": "FAKE",
+      "prediction": "FAKE",
+      "confidence": 0.2895869240164757,
+      "time": 2.3874881267547607,
+      "correct": true
+    },
+    {
+      "video": "abarnvbtwb.mp4",
+      "truth": "REAL",
+      "prediction": "REAL",
+      "confidence": 0.8828424017922953,
+      "time": 2.7236955165863037,
+      "correct": true
+    },
+    {
+      "video": "aelfnikyqj.mp4",
+      "truth": "REAL",
+      "prediction": "REAL",
+      "confidence": 0.9408705763332547,
+      "time": 3.1564536094665527,
+      "correct": true
+    },
+    {
+      "video": "afoovlsmtx.mp4",
+      "truth": "REAL",
+      "prediction": "REAL",
+      "confidence": 0.9269370935205371,
+      "time": 2.550963878631592,
+      "correct": true
+    },
+    {
+      "video": "agrmhtjdlk.mp4",
+      "truth": "REAL",
+      "prediction": "REAL",
+      "confidence": 0.672347212263516,
+      "time": 2.820199728012085,
+      "correct": true
+    },
+    {
+      "video": "ahqqqilsxt.mp4",
+      "truth": "REAL",
+      "prediction": "REAL",
+      "confidence": 0.9339767142012716,
+      "time": 3.1614606380462646,
+      "correct": true
+    },
+    {
+      "video": "ajqslcypsw.mp4",
+      "truth": "REAL",
+      "prediction": "REAL",
+      "confidence": 0.8204105036973488,
+      "time": 2.61558198928833,
+      "correct": true
+    },
+    {
+      "video": "anpuvshzoo.mp4",
+      "truth": "REAL",
+      "prediction": "REAL",
+      "confidence": 0.8098874694551342,
+      "time": 2.5103697776794434,
+      "correct": true
+    },
+    {
+      "video": "asaxgevnnp.mp4",
+      "truth": "REAL",
+      "prediction": "REAL",
+      "confidence": 0.920947093544528,
+      "time": 2.5031869411468506,
+      "correct": true
+    },
+    {
+      "video": "atkdltyyen.mp4",
+      "truth": "REAL",
+      "prediction": "REAL",
+      "confidence": 0.9315187715156936,
+      "time": 2.753270387649536,
+      "correct": true
+    },
+    {
+      "video": "atvmxvwyns.mp4",
+      "truth": "REAL",
+      "prediction": "REAL",
+      "confidence": 0.6882581543922425,
+      "time": 2.2033345699310303,
+      "correct": true
+    }
+  ]
+}
