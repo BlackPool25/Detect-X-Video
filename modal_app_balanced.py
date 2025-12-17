@@ -194,8 +194,12 @@ class BalancedDeepfakeDetector:
             pred_res = np.array([max(p) for p in pred_list])
             avg_fake_prob = float(pred_res.mean())
             
-            is_fake = avg_fake_prob > self.layer1_threshold
-            confidence = avg_fake_prob if is_fake else (1.0 - avg_fake_prob)
+            # Use 0.5 as decision boundary (not threshold)
+            # threshold is used for early stopping, not classification
+            is_fake = avg_fake_prob > 0.5
+            
+            # Confidence = distance from 0.5 (decision boundary)
+            confidence = abs(avg_fake_prob - 0.5) * 2.0  # Scale to 0-1 range
             
             return LayerResult(
                 layer_name="Layer 1: Visual Artifacts",
@@ -205,8 +209,9 @@ class BalancedDeepfakeDetector:
                 details={
                     "avg_fake_probability": avg_fake_prob,
                     "max_fake_probability": float(pred_res.max()),
-                    "threshold": self.layer1_threshold,
-                    "frames_analyzed": len(face_list)
+                    "decision_boundary": 0.5,
+                    "frames_analyzed": len(face_list),
+                    "note": f"Fake prob: {avg_fake_prob:.1%}, Verdict: {'FAKE' if is_fake else 'REAL'}, Confidence: {confidence:.1%}"
                 }
             )
             
