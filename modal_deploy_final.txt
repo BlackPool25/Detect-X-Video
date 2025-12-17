@@ -1,0 +1,12 @@
+✓ Created objects.
+├── 🔨 Created mount /home/lightdesk/Projects/AI-Video/modal_app_optimized.py
+├── 🔨 Created mount /home/lightdesk/Projects/AI-Video/weights/SBI
+├── 🔨 Created web function detect_video => 
+│   https://blackpool25--deepfake-detector-optimized-detect-video.modal.run
+├── 🔨 Created function DeepfakeDetector.*.
+└── 🔨 Created web function health => 
+    https://blackpool25--deepfake-detector-optimized-health.modal.run
+✓ App deployed in 3.137s! 🎉
+
+View Deployment: 
+https://modal.com/apps/blackpool25/main/deployed/deepfake-detector-optimized
